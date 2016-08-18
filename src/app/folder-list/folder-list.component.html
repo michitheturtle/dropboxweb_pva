@@ -1,0 +1,11 @@
+<div  class="container" *ngIf="isOpened">
+  <i *ngIf="loading" class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+  <div *ngFor="let file of fileList"><!-- (click)="download(file)" -->
+    <app-file-downloader [file]="file"></app-file-downloader>
+  </div>
+  <div  *ngFor="let item of folderList">
+    <h3 (click)="myChild.toggle()"><i class="fa fa-folder-o" [class.fa-folder-open-o]="myChild.isOpened"></i> {{item.name}}</h3>
+    <app-folder-list #myChild [forFolder]="item.path_lower"></app-folder-list>
+  </div>
+
+</div>

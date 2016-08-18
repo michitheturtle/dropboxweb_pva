@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+<div  class="container">
+  <app-folder-list [loadOnInit]="true" [forFolder]="'/Sabine'"></app-folder-list>
+  <!--
+  <ul *ngFor="let item of folderList">
+    <li>
+      <i *ngIf="!item.size" class="fa fa-folder" aria-hidden="true"></i> {{item.name}} {{item.size}}kb
+    </li>
+  </ul>-->
+</div>

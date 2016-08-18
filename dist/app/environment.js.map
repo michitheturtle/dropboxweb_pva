@@ -1,0 +1,1 @@
+{"version":3,"file":"environment.js","sourceRoot":"","sources":["environment.ts"],"names":[],"mappings":";AAAa,mBAAW,GAAG;IACzB,UAAU,EAAE,KAAK;IACjB,SAAS,EAAE,kEAAkE;CAE9E,CAAC","sourcesContent":["export const environment = {\n  production: false,\n  api_token: \"4xSPY4ZBCIcAAAAAAAADy4-QvAuCWhHEtEGalxoZxjwZr5oUZsoFDE3xubxODn85\"\n\n};\n"]}
